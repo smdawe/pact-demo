@@ -1,0 +1,102 @@
+{
+  "consumer": {
+    "name": "NodeRestClient"
+  },
+  "provider": {
+    "name": "ExamplesForTesting"
+  },
+  "interactions": [
+    {
+      "description": "A request",
+      "providerState": "Lat Lng Found For Postcode",
+      "request": {
+        "method": "GET",
+        "path": "/test"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "hello": "world"
+        }
+      }
+    },
+    {
+      "description": "A request",
+      "providerState": "all ok",
+      "request": {
+        "method": "GET",
+        "path": "/test"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "hello": "world"
+        }
+      }
+    },
+    {
+      "description": "A request",
+      "providerState": "expects param",
+      "request": {
+        "method": "GET",
+        "path": "/test",
+        "query": "a=b"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "hello": "world"
+        }
+      }
+    },
+    {
+      "description": "A request with param",
+      "providerState": "expects param",
+      "request": {
+        "method": "GET",
+        "path": "/test",
+        "query": "a=b"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "hello": "world"
+        }
+      }
+    },
+    {
+      "description": "A request with hedaer",
+      "providerState": "expects param",
+      "request": {
+        "method": "GET",
+        "path": "/test"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "hello": "world"
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}
